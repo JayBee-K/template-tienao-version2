@@ -1,0 +1,919 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Version 2 Tiền Ảo</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<style>
+		:root {
+			--color-main: #01B1FA;
+			--color-hover: #2928C2;
+			--dark-color-main: #00638a;
+			--dark-color-hover: #0d0d60;
+			--opacity-color-main: #01B1FA75;
+			--opacity-color-hover: #2928C275;
+			--color-main-2: #F59C00;
+			--color-hover-2: #ffb12b;
+			--color-border: #dadada;
+			--color-red: #FC3F1F;
+			--bg-main: #f6f8fe;
+			--bg-light: #F7F7F7;
+			--bg-white: #fff;
+			--bg-black: #202231;
+			--black-blue: #292945;
+			--black-blue-hover: #4a4a70;
+			--text-dark: #343a40;
+			--text-dark-50: #464748;
+			--text-gray: #6c757d;
+			--text-gray-50: #a4a9ae;
+		}
+	
+	</style>
+</head>
+<body>
+<div class="template-6_modal">
+	<div class="modal fade custom-scrollbar" data-backdrop="false" data-type="1" id="modalChooseCoin"
+	     tabindex="-1">
+		<div class="modal-dialog modal-effect_zoom">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Chọn Coin</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<input type="text" class="coin-input" placeholder="Tìm kiếm coin">
+					<div id="chooseCoin" class="list-coin">
+						<ul class="list-unstyled mb-0 custom-scrollbar">
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/etherum.png"
+								   data-name="Etherum">
+									<div class="image">
+										<img src="./assets/images/coins/etherum.png" alt="">
+									</div>
+									<div class="name">
+										<span>Eth</span>
+										Etherum
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/bitcoin.png"
+								   data-name="Bitcoin">
+									<div class="image">
+										<img src="./assets/images/coins/bitcoin.png" alt="">
+									</div>
+									<div class="name">
+										<span>BIT</span>
+										Bitcoin
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/etherum.png"
+								   data-name="Etherum">
+									<div class="image">
+										<img src="./assets/images/coins/etherum.png" alt="">
+									</div>
+									<div class="name">
+										<span>Eth</span>
+										Etherum
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/bitcoin.png"
+								   data-name="Bitcoin">
+									<div class="image">
+										<img src="./assets/images/coins/bitcoin.png" alt="">
+									</div>
+									<div class="name">
+										<span>BIT</span>
+										Bitcoin
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/etherum.png"
+								   data-name="Etherum">
+									<div class="image">
+										<img src="./assets/images/coins/etherum.png" alt="">
+									</div>
+									<div class="name">
+										<span>Eth</span>
+										Etherum
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/bitcoin.png"
+								   data-name="Bitcoin">
+									<div class="image">
+										<img src="./assets/images/coins/bitcoin.png" alt="">
+									</div>
+									<div class="name">
+										<span>BIT</span>
+										Bitcoin
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/etherum.png"
+								   data-name="Etherum">
+									<div class="image">
+										<img src="./assets/images/coins/etherum.png" alt="">
+									</div>
+									<div class="name">
+										<span>Eth</span>
+										Etherum
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/bitcoin.png"
+								   data-name="Bitcoin">
+									<div class="image">
+										<img src="./assets/images/coins/bitcoin.png" alt="">
+									</div>
+									<div class="name">
+										<span>BIT</span>
+										Bitcoin
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/etherum.png"
+								   data-name="Etherum">
+									<div class="image">
+										<img src="./assets/images/coins/etherum.png" alt="">
+									</div>
+									<div class="name">
+										<span>Eth</span>
+										Etherum
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/bitcoin.png"
+								   data-name="Bitcoin">
+									<div class="image">
+										<img src="./assets/images/coins/bitcoin.png" alt="">
+									</div>
+									<div class="name">
+										<span>BIT</span>
+										Bitcoin
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/etherum.png"
+								   data-name="Etherum">
+									<div class="image">
+										<img src="./assets/images/coins/etherum.png" alt="">
+									</div>
+									<div class="name">
+										<span>Eth</span>
+										Etherum
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"
+								   data-image="./assets/images/coins/bitcoin.png"
+								   data-name="Bitcoin">
+									<div class="image">
+										<img src="./assets/images/coins/bitcoin.png" alt="">
+									</div>
+									<div class="name">
+										<span>BIT</span>
+										Bitcoin
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" data-backdrop="false" data-type="1" id="modalLogin"
+	     tabindex="-1">
+		<div class="modal-dialog modal-effect_zoom">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Login</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="mb-4">
+							<label for="" class="modal-label"><span>*</span>Email login</label>
+							<input type="email" class="modal-input" required>
+						</div>
+						<div class="mb-4">
+							<label for="" class="modal-label"><span>*</span>Password</label>
+							<input type="password" class="modal-input" required>
+						</div>
+						<div class="divide">
+							<button class="template-6_btn btn-effect"><span>Login</span></button>
+						</div>
+					</form>
+					<div class="text-center">
+						<div class="text-desc">
+							<a href="javascript:void(0)" class="callModal"
+							   data-modal="modalForgot">Tìm lại mật khẩu</a>
+						</div>
+						<div class="text-desc">
+							Chưa có tài khoản? <a href="javascript:void(0)" class="callModal"
+							                      data-modal="modalRegister">Đăng ký ngay</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" data-backdrop="false" data-type="1" id="modalRegister"
+	     tabindex="-1">
+		<div class="modal-dialog modal-effect_zoom">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Register</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="mb-4">
+							<label for="" class="modal-label"><span>*</span>Email Address</label>
+							<input type="email" class="modal-input" required>
+						</div>
+						<div class="mb-4">
+							<label for="" class="modal-label"><span>*</span>Password</label>
+							<input type="password" class="modal-input" required>
+						</div>
+						<div class="mb-4">
+							<label for="" class="modal-label"><span>*</span>Confirm Password</label>
+							<input type="password" class="modal-input" required>
+						</div>
+						<div class="mb-4">
+							<label for="" class="modal-label"><span>*</span>Full Name</label>
+							<input type="text" class="modal-input" required>
+						</div>
+						<div class="mb-4">
+							<label for="" class="modal-label"><span>*</span>Number Phone</label>
+							<input type="tel" class="modal-input" required>
+						</div>
+						<div class="divide">
+							<button class="template-6_btn btn-effect"><span>Login</span></button>
+						</div>
+					</form>
+					<div class="text-center">
+						<div class="text-desc">
+							Đã có tài khoản? <a href="javascript:void(0)" class="callModal"
+							                    data-modal="modalLogin">Đăng nhập ngay</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" data-backdrop="false" data-type="1" id="modalForgot"
+	     tabindex="-1">
+		<div class="modal-dialog modal-effect_zoom">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Login</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="mb-4">
+							<label for="" class="modal-label"><span>*</span>Email login</label>
+							<input type="email" class="modal-input" required>
+						</div>
+						<div class="divide">
+							<button class="template-6_btn btn-effect"><span>Send mail</span></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="template-6_header header-page">
+	<div class="top-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="description-area">
+						Template website tiền ảo version 2
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="social-area">
+						<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-center justify-contend-md-end">
+							<li>
+								<a href="#">
+									<i class="fab fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-github"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-telegram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-area">
+		<div class="container">
+			<div class="row row-5 align-items-center">
+				<div class="col-lg-2 col-7 order-lg-1 order-1">
+					<div class="logo-area">
+						<a href="index.html" class="d-inline-block">
+							<img src="./assets/images/logo-white.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-7 order-lg-2 order-3">
+					<div class="navigation-area">
+						<div class="navigation-user p-3 d-block d-lg-none">
+							<a href="#modalLogin" data-toggle="modal"
+							   class="template-6_btn btn-effect w-100 d-none">
+								Đăng nhập
+							</a>
+							<div class="user-login">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)">
+											<i class="fas fa-user mr-2"></i>
+											Thông tin tài khoản
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="fas fa-lock-alt mr-2"></i>
+											Bảo mật
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="fas fa-sign-out-alt mr-2"></i>
+											Đăng xuất
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<ul class="list-unstyled mb-0" id="has-navigation">
+							<li>
+								<a href="javascript:void(0)">
+									Mua/bán USDT
+									<i class="fas fa-caret-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											Mua USDT
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Bán USDT
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									Chuyển đổi
+									<i class="fas fa-caret-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											Chuyển đổi coin
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Chuyển đổi ngân hàng
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									Binace
+									<i class="fas fa-caret-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											Binace trade
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Binance API
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Cảnh báo giá
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Tin tức
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-5 order-lg-3 order-2">
+					<div class="action-area">
+						<ul class="list-unstyled mb-0">
+							<li class="language">
+								<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									Tiếng Việt
+								</span>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/vi.png" alt="">
+											Tiếng Việt
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/en.png" alt="">
+											Tiếng Anh
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+										<span>
+											<img src="./assets/images/language/japan.png" alt="">
+											Tiếng Nhật
+										</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="login d-none">
+								<a href="#modalLogin" class="template-6_btn btn-effect" data-toggle="modal">
+									<span>
+										Đăng nhập
+									</span>
+								</a>
+							</li>
+							<li class="login-list">
+								<a href="javascript:void(0)" class="template-6_btn btn-effect">
+									<i class="fas fa-user"></i>
+									<span>Tài khoản</span>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)">
+											<i class="fal fa-angle-right"></i>
+											Thông tin tài khoản
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="fal fa-angle-right"></i>
+											Bảo mật
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="fal fa-angle-right"></i>
+											Đăng xuất
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="hamburger d-block d-lg-none">
+								<div id="hamburger">
+									<span></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-area"></div>
+</header>
+<div class="template-6_main">
+	<div class="template-6_page">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="template-6_form">
+						<div class="title">
+							<span>
+								Cập nhật thông tin tài khoản
+							</span>
+						</div>
+						<form action="">
+							<div class="mb-4 form-wrapper">
+								<label for="" class="form-label">Email đăng nhập</label>
+								<input type="text" value="thtan0407@gmail.com" readonly class="form-input">
+							</div>
+							<div class="mb-4 form-wrapper">
+								<label for="" class="form-label">Họ & tên</label>
+								<input type="text" value="Triệu Hoàng Tấn" class="form-input">
+							</div>
+							<div class="mb-4 form-wrapper">
+								<label for="" class="form-label">Số điện thoại</label>
+								<input type="text" class="form-input">
+							</div>
+							<div class="mb-4 form-wrapper">
+								<label for="" class="form-label">Ngôn ngữ</label>
+								<select name="" class="form-input" id="">
+									<option value="vi">Vietnam</option>
+									<option value="en">English</option>
+									<option value="jp">Japanese</option>
+								</select>
+							</div>
+							<div class="mb-4 form-wrapper">
+								<label for="" class="form-label">Giới tính</label>
+								<div class="form-group mb-0">
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="sex01" name="sex"
+										       class="custom-control-input">
+										<label class="custom-control-label" for="sex01">Nam</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="sex02" name="sex"
+										       class="custom-control-input">
+										<label class="custom-control-label" for="sex02">Nữ</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="sex03" name="sex"
+										       class="custom-control-input">
+										<label class="custom-control-label" for="sex03">Không khai
+											báo</label>
+									</div>
+								</div>
+							</div>
+							<div class="mt-4 text-center">
+								<button type="submit" class="template-6_btn btn-effect w-auto px-5 mx-auto">
+									<span>Cập nhật thông tin</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="template-6_form">
+						<div class="title">
+							<span>
+								Đổi mật khẩu
+							</span>
+						</div>
+						<form action="">
+							<div class="mb-4 form-wrapper">
+								<label for="" class="form-label">Mật khẩu cũ</label>
+								<input type="password" class="form-input">
+							</div>
+							<div class="mb-4 form-wrapper">
+								<label for="" class="form-label">Mật khẩu mới</label>
+								<input type="password" class="form-input">
+							</div>
+							<div class="mb-4 form-wrapper">
+								<label for="" class="form-label">Nhập lại mật khẩu</label>
+								<input type="password" class="form-input">
+							</div>
+							<div class="mt-4 text-center">
+								<button type="submit" class="template-6_btn btn-effect w-auto px-5 mx-auto">
+									<span>Đổi mật khẩu</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-12 mt-5">
+					<div class="template-6_table">
+						<div class="title">
+							<span>
+								Lịch sử đăng nhập
+							</span>
+						</div>
+						<div class="table-responsive">
+							<table class="table">
+								<tr>
+									<th>IP</th>
+									<th>Ngày tạo</th>
+									<th>Trình duyệt</th>
+								</tr>
+								<tr>
+									<td>
+										14.237.30.129
+									</td>
+									<td>
+										2021-04-22 11:12:18
+									</td>
+									<td>
+										Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+										Chrome/90.0.4430.85 Safari/537.36
+									</td>
+								</tr>
+								<tr>
+									<td>
+										14.237.30.129
+									</td>
+									<td>
+										2021-04-22 11:12:18
+									</td>
+									<td>
+										Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+										Chrome/90.0.4430.85 Safari/537.36
+									</td>
+								</tr>
+								<tr>
+									<td>
+										14.237.30.129
+									</td>
+									<td>
+										2021-04-22 11:12:18
+									</td>
+									<td>
+										Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+										Chrome/90.0.4430.85 Safari/537.36
+									</td>
+								</tr>
+								<tr>
+									<td>
+										14.237.30.129
+									</td>
+									<td>
+										2021-04-22 11:12:18
+									</td>
+									<td>
+										Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+										Chrome/90.0.4430.85 Safari/537.36
+									</td>
+								</tr>
+								<tr>
+									<td>
+										14.237.30.129
+									</td>
+									<td>
+										2021-04-22 11:12:18
+									</td>
+									<td>
+										Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+										Chrome/90.0.4430.85 Safari/537.36
+									</td>
+								</tr>
+								<tr>
+									<td>
+										14.237.30.129
+									</td>
+									<td>
+										2021-04-22 11:12:18
+									</td>
+									<td>
+										Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+										Chrome/90.0.4430.85 Safari/537.36
+									</td>
+								</tr>
+								<tr>
+									<td>
+										14.237.30.129
+									</td>
+									<td>
+										2021-04-22 11:12:18
+									</td>
+									<td>
+										Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+										Chrome/90.0.4430.85 Safari/537.36
+									</td>
+								</tr>
+								<tr>
+									<td>
+										14.237.30.129
+									</td>
+									<td>
+										2021-04-22 11:12:18
+									</td>
+									<td>
+										Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+										Chrome/90.0.4430.85 Safari/537.36
+									</td>
+								</tr>
+								<tr>
+									<td>
+										14.237.30.129
+									</td>
+									<td>
+										2021-04-22 11:12:18
+									</td>
+									<td>
+										Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+										Chrome/90.0.4430.85 Safari/537.36
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="template-6_footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-6">
+				<div class="footer-main">
+					<div class="logo-area">
+						<a href="index.html" class="d-inline-block">
+							<img src="./assets/images/logo-white.png" alt="">
+						</a>
+					</div>
+					<div class="description-area">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse exercitationem expedita illum
+						modi, placeat quis unde. Nemo, neque odit omnis optio quasi sequi!
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-6">
+				<div class="footer-link">
+					<div class="footer-heading">
+						Community
+					</div>
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="">Forums</a>
+						</li>
+						<li>
+							<a href="">Discord</a>
+						</li>
+						<li>
+							<a href="">Reddit</a>
+						</li>
+						<li>
+							<a href="">Telegram</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2 col-6">
+				<div class="footer-link">
+					<div class="footer-heading">
+						Social
+					</div>
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="">Facebook</a>
+						</li>
+						<li>
+							<a href="">Twitter</a>
+						</li>
+						<li>
+							<a href="">Instagram</a>
+						</li>
+						<li>
+							<a href="">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2 col-6">
+				<div class="footer-link">
+					<div class="footer-heading">
+						Resources
+					</div>
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="">Branding</a>
+						</li>
+						<li>
+							<a href="">Wallet Tracker</a>
+						</li>
+						<li>
+							<a href="">Contract</a>
+						</li>
+						<li>
+							<a href="">White paper</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row footer-copyright">
+			<div class="col-md-6">
+				Copyright © 2021 <a class="footer-copyright_link" href="https://nencer.vn">Nencer.vn JSC</a>. | All
+				Rights Reserved
+			</div>
+			<div class="col-md-6">
+				<div class="footer-sublink d-md-flex align-items-center justify-content-end">
+					<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-center justify-content-md-end">
+						<li>
+							<a href="">Terms of service</a>
+						</li>
+						<li>
+							<a href="">Privacy Policy</a>
+						</li>
+						<li>
+							<a href="">Cookie Policy</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/plugin/particles.min.js"></script>
+<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+</body>
+</html>
