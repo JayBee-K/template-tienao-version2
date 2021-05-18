@@ -307,8 +307,8 @@ $(document).ready(function () {
 		});
 	}
 	
-	$('.call-modalCoin').click(function () {
-		callModalCoin($(this).data('type'));
+	$('.call-dropdownCoin').click(function () {
+		callDropdownCoin($(this));
 	});
 	
 	$('#chooseCoin > ul > li > a').click(function () {
@@ -318,31 +318,32 @@ $(document).ready(function () {
 	$('#swap-coin').click(function () {
 		swapCoin($(this));
 	});
+	
+	$(document).on("mouseup", function (e) {
+		var o = $(".dropdown-coin.show");
+		o.is(e.target) || 0 !== o.has(e.target).length
+		|| (o.removeClass('show'))
+	});
 });
 
-const callModalCoin = function (type) {
-	$('.modal').modal('hide');
-	$('#modalChooseCoin').data('type', type);
-	$('#modalChooseCoin').modal('show');
-	setTimeout(function () {
-		$('body').addClass('modal-open modal-hide-padding');
-	}, 150);
-	
+
+const callDropdownCoin = function (elm) {
+	let dropdown_coinElm = elm.parents('.template-6_banner .form-item').find('.dropdown-coin');
+	if (dropdown_coinElm.hasClass('show')) {
+		dropdown_coinElm.removeClass('show');
+	} else {
+		$('.template-6_banner .dropdown-coin').removeClass('show');
+		dropdown_coinElm.addClass('show');
+	}
 }
 
 var changeCoin = function (elm) {
 	let img = elm.data('image'),
-		name = elm.data('name'),
-		typeModal = parseInt(elm.closest($('#modalChooseCoin')).data('type'));
+		name = elm.data('name');
 	
-	if (typeModal == 1) {
-		$('.coin-from .circle-coin img').prop('src', img);
-		$('.coin-from .name-coin div').text(name);
-	} else if (typeModal == 2) {
-		$('.coin-to .circle-coin img').prop('src', img);
-		$('.coin-to .name-coin div').text(name);
-	}
-	$('#modalChooseCoin').modal('hide');
+	elm.parents('.template-6_banner .form-item').find('.circle-coin img').prop('src', img);
+	elm.parents('.template-6_banner .form-item').find('.name-coin div').text(name);
+	elm.parents('.dropdown-coin').removeClass('show');
 }
 
 const swapCoin = function (elm) {

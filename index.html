@@ -49,6 +49,7 @@
 			--bg-light: #F7F7F7;
 			--bg-white: #fff;
 			--bg-black: #252630;
+			--bg-black-opacity: #25263080;
 			--black-blue: #3d3d83;
 			--black-blue-opacity: #42425a75;
 			--black-blue-hover: #404051;
@@ -63,183 +64,185 @@
 </head>
 <body>
 <div class="template-6_modal">
-	<div class="modal fade custom-scrollbar" data-type="1" id="modalChooseCoin"
-	     tabindex="-1">
-		<div class="modal-dialog modal-effect_zoom">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Chọn Coin</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<i class="fal fa-times"></i>
-					</button>
-				</div>
-				<div class="modal-body">
-					<input type="text" class="coin-input" placeholder="Tìm kiếm coin">
-					<div id="chooseCoin" class="list-coin">
-						<ul class="list-unstyled mb-0 custom-scrollbar">
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/etherum.png"
-								   data-name="Etherum">
-									<div class="image">
-										<img src="./assets/images/coins/etherum.png" alt="">
-									</div>
-									<div class="name">
-										<span>Eth</span>
-										Etherum
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/bitcoin.png"
-								   data-name="Bitcoin">
-									<div class="image">
-										<img src="./assets/images/coins/bitcoin.png" alt="">
-									</div>
-									<div class="name">
-										<span>BIT</span>
-										Bitcoin
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/etherum.png"
-								   data-name="Etherum">
-									<div class="image">
-										<img src="./assets/images/coins/etherum.png" alt="">
-									</div>
-									<div class="name">
-										<span>Eth</span>
-										Etherum
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/bitcoin.png"
-								   data-name="Bitcoin">
-									<div class="image">
-										<img src="./assets/images/coins/bitcoin.png" alt="">
-									</div>
-									<div class="name">
-										<span>BIT</span>
-										Bitcoin
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/etherum.png"
-								   data-name="Etherum">
-									<div class="image">
-										<img src="./assets/images/coins/etherum.png" alt="">
-									</div>
-									<div class="name">
-										<span>Eth</span>
-										Etherum
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/bitcoin.png"
-								   data-name="Bitcoin">
-									<div class="image">
-										<img src="./assets/images/coins/bitcoin.png" alt="">
-									</div>
-									<div class="name">
-										<span>BIT</span>
-										Bitcoin
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/etherum.png"
-								   data-name="Etherum">
-									<div class="image">
-										<img src="./assets/images/coins/etherum.png" alt="">
-									</div>
-									<div class="name">
-										<span>Eth</span>
-										Etherum
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/bitcoin.png"
-								   data-name="Bitcoin">
-									<div class="image">
-										<img src="./assets/images/coins/bitcoin.png" alt="">
-									</div>
-									<div class="name">
-										<span>BIT</span>
-										Bitcoin
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/etherum.png"
-								   data-name="Etherum">
-									<div class="image">
-										<img src="./assets/images/coins/etherum.png" alt="">
-									</div>
-									<div class="name">
-										<span>Eth</span>
-										Etherum
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/bitcoin.png"
-								   data-name="Bitcoin">
-									<div class="image">
-										<img src="./assets/images/coins/bitcoin.png" alt="">
-									</div>
-									<div class="name">
-										<span>BIT</span>
-										Bitcoin
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/etherum.png"
-								   data-name="Etherum">
-									<div class="image">
-										<img src="./assets/images/coins/etherum.png" alt="">
-									</div>
-									<div class="name">
-										<span>Eth</span>
-										Etherum
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)"
-								   data-image="./assets/images/coins/bitcoin.png"
-								   data-name="Bitcoin">
-									<div class="image">
-										<img src="./assets/images/coins/bitcoin.png" alt="">
-									</div>
-									<div class="name">
-										<span>BIT</span>
-										Bitcoin
-									</div>
-								</a>
-							</li>
-						</ul>
+	<!--
+		<div class="modal fade custom-scrollbar" data-type="1" id="modalChooseCoin"
+		     tabindex="-1">
+			<div class="modal-dialog modal-effect_zoom">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Chọn Coin</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<input type="text" class="coin-input" placeholder="Tìm kiếm coin">
+						<div id="chooseCoin" class="list-coin">
+							<ul class="list-unstyled mb-0 custom-scrollbar">
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/etherum.png"
+									   data-name="Etherum">
+										<div class="image">
+											<img src="./assets/images/coins/etherum.png" alt="">
+										</div>
+										<div class="name">
+											<span>Eth</span>
+											Etherum
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/bitcoin.png"
+									   data-name="Bitcoin">
+										<div class="image">
+											<img src="./assets/images/coins/bitcoin.png" alt="">
+										</div>
+										<div class="name">
+											<span>BIT</span>
+											Bitcoin
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/etherum.png"
+									   data-name="Etherum">
+										<div class="image">
+											<img src="./assets/images/coins/etherum.png" alt="">
+										</div>
+										<div class="name">
+											<span>Eth</span>
+											Etherum
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/bitcoin.png"
+									   data-name="Bitcoin">
+										<div class="image">
+											<img src="./assets/images/coins/bitcoin.png" alt="">
+										</div>
+										<div class="name">
+											<span>BIT</span>
+											Bitcoin
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/etherum.png"
+									   data-name="Etherum">
+										<div class="image">
+											<img src="./assets/images/coins/etherum.png" alt="">
+										</div>
+										<div class="name">
+											<span>Eth</span>
+											Etherum
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/bitcoin.png"
+									   data-name="Bitcoin">
+										<div class="image">
+											<img src="./assets/images/coins/bitcoin.png" alt="">
+										</div>
+										<div class="name">
+											<span>BIT</span>
+											Bitcoin
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/etherum.png"
+									   data-name="Etherum">
+										<div class="image">
+											<img src="./assets/images/coins/etherum.png" alt="">
+										</div>
+										<div class="name">
+											<span>Eth</span>
+											Etherum
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/bitcoin.png"
+									   data-name="Bitcoin">
+										<div class="image">
+											<img src="./assets/images/coins/bitcoin.png" alt="">
+										</div>
+										<div class="name">
+											<span>BIT</span>
+											Bitcoin
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/etherum.png"
+									   data-name="Etherum">
+										<div class="image">
+											<img src="./assets/images/coins/etherum.png" alt="">
+										</div>
+										<div class="name">
+											<span>Eth</span>
+											Etherum
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/bitcoin.png"
+									   data-name="Bitcoin">
+										<div class="image">
+											<img src="./assets/images/coins/bitcoin.png" alt="">
+										</div>
+										<div class="name">
+											<span>BIT</span>
+											Bitcoin
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/etherum.png"
+									   data-name="Etherum">
+										<div class="image">
+											<img src="./assets/images/coins/etherum.png" alt="">
+										</div>
+										<div class="name">
+											<span>Eth</span>
+											Etherum
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)"
+									   data-image="./assets/images/coins/bitcoin.png"
+									   data-name="Bitcoin">
+										<div class="image">
+											<img src="./assets/images/coins/bitcoin.png" alt="">
+										</div>
+										<div class="name">
+											<span>BIT</span>
+											Bitcoin
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="modal fade custom-scrollbar" data-type="1" id="modalLogin"
+		-->
+	<div class="modal fade custom-scrollbar" id="modalLogin"
 	     tabindex="-1">
 		<div class="modal-dialog modal-effect_zoom">
 			<div class="modal-content">
@@ -277,7 +280,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade custom-scrollbar" data-type="1" id="modalRegister"
+	<div class="modal fade custom-scrollbar" id="modalRegister"
 	     tabindex="-1">
 		<div class="modal-dialog modal-effect_zoom">
 			<div class="modal-content">
@@ -323,7 +326,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade custom-scrollbar" data-type="1" id="modalForgot"
+	<div class="modal fade custom-scrollbar" id="modalForgot"
 	     tabindex="-1">
 		<div class="modal-dialog modal-effect_zoom">
 			<div class="modal-content">
@@ -614,7 +617,7 @@
 										<div class="form-inner">
 											<div class="form-item">
 												<div class="dflex-wrap coin-from">
-													<div class="wrap-coin call-modalCoin" data-type="1">
+													<div class="wrap-coin call-dropdownCoin">
 														<div class="circle-coin">
 															<img src="./assets/images/coins/bitcoin.png" alt="">
 														</div>
@@ -625,6 +628,187 @@
 													</div>
 													<div class="wrap-input">
 														<input type="text" placeholder="0.0">
+													</div>
+												</div>
+												<div class="dropdown-coin">
+													<div class="dropdown-coin--inner">
+														<div class="title">
+															Chọn coin
+														</div>
+														<input type="text" class="coin-input"
+														       placeholder="Tìm kiếm coin">
+														<div id="chooseCoin" class="list-coin">
+															<ul class="list-unstyled mb-0 custom-scrollbar">
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+															</ul>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -691,7 +875,7 @@
 											</div>
 											<div class="form-item">
 												<div class="dflex-wrap coin-to">
-													<div class="wrap-coin call-modalCoin" data-type="2">
+													<div class="wrap-coin call-dropdownCoin" data-type="2">
 														<div class="circle-coin">
 															<img src="./assets/images/coins/etherum.png" alt="">
 														</div>
@@ -702,6 +886,187 @@
 													</div>
 													<div class="wrap-input">
 														<input type="text" placeholder="0.0">
+													</div>
+												</div>
+												<div class="dropdown-coin">
+													<div class="dropdown-coin--inner">
+														<div class="title">
+															Chọn coin
+														</div>
+														<input type="text" class="coin-input"
+														       placeholder="Tìm kiếm coin">
+														<div id="chooseCoin" class="list-coin">
+															<ul class="list-unstyled mb-0 custom-scrollbar">
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/etherum.png"
+																	   data-name="Etherum">
+																		<div class="image">
+																			<img src="./assets/images/coins/etherum.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>Eth</span>
+																			Etherum
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																	   data-image="./assets/images/coins/bitcoin.png"
+																	   data-name="Bitcoin">
+																		<div class="image">
+																			<img src="./assets/images/coins/bitcoin.png"
+																			     alt="">
+																		</div>
+																		<div class="name">
+																			<span>BIT</span>
+																			Bitcoin
+																		</div>
+																	</a>
+																</li>
+															</ul>
+														</div>
 													</div>
 												</div>
 											</div>
