@@ -973,7 +973,7 @@ textarea:focus,
     top: 0;
     bottom: 0;
     width: 100%;
-    background: url('../images/hero-banner.jpg') bottom -250px center/100% no-repeat;
+    background: url('../images/hero-banner.jpg') bottom -180px center/100% no-repeat;
 }
 
 .template-6_banner:after {
